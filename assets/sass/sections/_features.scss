@@ -44,6 +44,7 @@
             }
 
             a {
+                display: inline-block;
                 font-family: $font_family-Raleway;
                 font-size: $font_size-secondary;
                 font-style: $font_style-normal;
@@ -59,7 +60,7 @@
                     top: 2.5vh;
                     left: 0;
                     height: 1px;
-                    width: 16vw;
+                    width: 100%;
                     background: $color_external-active;
                 }
 
@@ -185,7 +186,6 @@
                         position: absolute;
                         left: 0;
                         height: 1px;
-                        width: 18vw;
                         background: $color_external-active;
                     }
                 }
@@ -218,7 +218,6 @@
                         position: absolute;
                         left: 0;
                         height: 1px;
-                        width: 26vw;
                         background: $color_external-active;
                     }
                 }
@@ -299,16 +298,6 @@
             width: 100%;
             height: 2%;
             z-index: -1;
-        }
-
-        &_primary {
-            &-content {
-                a {
-                    &::before {
-                        width: 44vw;
-                    }
-                }
-            }
         }
     }
 }
