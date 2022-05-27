@@ -7,7 +7,7 @@
         justify-content: center;
         align-items: center;
         height: 5vh;
-        width: 100%;
+        max-width: 100%;
         background: $color_primary-default;
 
         p {
@@ -39,22 +39,24 @@
             NavBar - Start
 =======================================*/
 .header {
-    height: 100vh;
+    padding-bottom: 10vh;
 
     &_navbar {
-        padding: 3.5rem 8rem;
+        padding: 4vh 5vw;
 
         &-logo {
             img {
-                width: 166px;
-                height: 49px;
+                max-width: 16.6rem;
+                max-height: 4.9rem;
+                width: 100%;
+                height: 100%;
             }
         }
 
         &-nav {
             ul {
                 li {
-                    margin: 0 0 0 5.7rem;
+                    margin: 0 0 0 3.7vw;
 
                     a {
                         font-family: $font_family-Raleway;
@@ -77,19 +79,20 @@
 @media only screen and (max-width: 992px) {
     .header {
         &_navbar {
-            padding: 2.4rem;
+            // padding: 2.4rem;
 
             &-logo {
                 img {
-                    width: 80px;
-                    height: 24px;
+                    max-width: 8rem;
+                    max-height: 2.4rem;
+                    width: 100%;
+                    height: 100%;
                 }
             }
 
             &-nav {
                 ul {
                     li {
-                        margin: 0 0 0 0.6rem;
 
                         a {
                             font-size: $font_size-fourth;
@@ -105,12 +108,9 @@
 @media only screen and (max-width: 375px) {
     .header {
         &_navbar {
-
             &-nav {
-
                 ul {
                     li {
-
                         a {
                             font-size: $font_size-third;
                             line-height: $font_line-height-third;
@@ -131,8 +131,8 @@
 =======================================*/
 .header {
     &_home {
-        padding: 1rem;
-        margin-top: 12rem;
+        // padding: 1vh 1vw;
+        margin-top: 17vh;
 
         &_wrapper {
             @include flex;
@@ -147,6 +147,7 @@
                 font-weight: $font_weight-primary;
                 line-height: $font_line-height-primary;
                 color: $color_primary-default;
+                margin-bottom: 1vh;
             }
 
             p {
@@ -156,9 +157,18 @@
                 font-weight: $font_weight-secondary;
                 line-height: $font_line-height-secondary;
                 color: $color_primary-default;
+                margin-bottom: 2vh;
             }
 
             &-contact {
+                input {
+                    max-width: 32rem;
+                    max-height: 4.5rem;
+                    width: 100%;
+                    height: 100%;
+                    padding: 1vh 1vw;
+                }
+
                 button {
                     font-family: $font_family-Raleway;
                     font-style: $font_style-normal;
@@ -173,14 +183,20 @@
                     -moz-border-radius: 3.125px;
                     -ms-border-radius: 3.125px;
                     -o-border-radius: 3.125px;
+                    max-width: 20rem;
+                    max-height: 4.5rem;
+                    width: 100%;
+                    height: 100%;
+                    padding: 1vh 1vw;
+                    margin-left: 1vw;
                 }
             }
         }
 
         &-secondary {
             img {
-                max-width: 640px;
-                max-height: 474;
+                max-width: 64rem;
+                max-height: 47.4rem;
                 width: 100%;
                 height: 100%;
             }
@@ -216,11 +232,14 @@
                 }
 
                 &-contact {
+                    flex-direction: column;
+
                     button {
                         font-size: $font_size-fourth;
                         line-height: $font_line-height-fourth;
                         background: $color_button-default;
                         color: $color_link-default;
+                        margin-top: 1vh;
                     }
                 }
             }
@@ -233,7 +252,7 @@
         &_home {
 
             &_wrapper {
-                margin-top: 2rem;
+                margin-top: 2vh;
             }
 
             &-primary {
@@ -246,7 +265,6 @@
                         line-height: $font_line-height-fourth;
                         background: $color_button-default;
                         color: $color_link-default;
-                        margin-top: 1rem;
                     }
                 }
             }
