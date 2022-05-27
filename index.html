@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./assets/css/main.css">
 
     <!-- WebSite's Favicon -->
-    <link rel="icon" href="./assets/images/favicon-32x32.png">
+    <link rel="icon" href="./assets/images/favicon.png">
 
     <!-- WebSite's Icons | Font Awesome 6.0.0 -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -33,10 +33,10 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="header_navbar-logo">
-                        <img src="./assets/images/logo.svg" alt="Your browser don't support this image">
+                        <img src="./assets/images/logo-dark.svg" alt="Your browser don't support this image">
                     </div>
                     <div class="header_navbar-nav">
-                        <ul class="flex align-items-center mb-1">
+                        <ul class="flex align-items-center">
                             <li><a href="#features">Features</a></li>
                             <li><a href="#team">Team</a></li>
                             <li><a href="#footer">Contact</a></li>
@@ -50,14 +50,14 @@
                 <div class="header_home_wrapper">
                     <div class="col-6 col-sm-12 col-xs-12 flex align-items-center">
                         <div class="header_home-primary">
-                            <h1 class="mb-4">All your files in one secure location, accessible anywhere.</h1>
-                            <p class="mb-4">Fylo stores your most important files in one secure location. Access
+                            <h1>All your files in one secure location, accessible anywhere.</h1>
+                            <p>Fylo stores your most important files in one secure location. Access
                                 them wherever you
                                 need, share and collaborate with friends, family, and co-workers.</p>
-                            <div class="header_home-primary-contact flex align-items-center">
-                                <input class="p-2 pr-15" type="email" placeholder="Enter your email . . .">
-                                <button class="p-2 pr-12 pl-12 ml-3">Get Started</button>
-                            </div>
+                            <form class="header_home-primary-contact flex align-items-center" action="#">
+                                <input type="email" placeholder="Enter your email . . ." required>
+                                <button>Get Started</button>
+                            </form>
                         </div>
                     </div>
                     <div class="col-6 col-sm-12 col-xs-12">
@@ -73,32 +73,32 @@
     <!--########### End -> Header ###########-->
     <!--########### Features ###########-->
     <section class="features flex-center-center" id="features">
-        <img class="features_bg" src="./assets/images/bg-curve-desktop.svg" alt="Your browser don't support this image">
+        <img class="features_bg" src="./assets/images/background-curve.svg" alt="Your browser don't support this image">
         <div class="container">
             <div class="features_wrapper">
                 <div class="col-6 col-sm-12 col-xs-12">
                     <div class="features_primary">
                         <div class="features_primary-content">
-                            <h2 class="mb-6">Stay productive, wherever you are</h2>
-                            <p class="mb-3">Never let location be an issue when accessing your files. Fylo has you
+                            <h2>Stay productive, wherever you are</h2>
+                            <p>Never let location be an issue when accessing your files. Fylo has you
                                 covered for all of
                                 your file storage needs.</p>
-                            <p class="mb-4">Securely share files and folders with friends, family and colleagues for
+                            <p>Securely share files and folders with friends, family and colleagues for
                                 live
                                 collaboration. No email attachments required!</p>
-                            <a class="flex align-items-center" href="#">See how Fylo works
-                                <img class="ml-2" src="./assets/images/icon-arrow.svg"
-                                    alt="Your browser don't support this image">
+                            <a class="flex align-items-center" href="#">
+                                See how Fylo works
+                                <img src="./assets/images/icon-arrow.svg" alt="Your browser don't support this image">
                             </a>
                         </div>
                         <div class="features_primary-card col-7">
                             <i class="fa-solid fa-quote-left"></i>
                             <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch
                                 our team has become a well-oiled collaboration machine.</p>
-                            <div class="features_primary-card-author flex align-items-center mt-3">
-                                <img src="./assets/images/avatar-testimonial.jpg"
+                            <div class="features_primary-card-author flex align-items-center">
+                                <img src="./assets/images/testimonial-avatar.jpg"
                                     alt="Your browser don't support this image">
-                                <div class="features_primary-card-author-info ml-2">
+                                <div class="features_primary-card-author-info text-align-start">
                                     <h3>Kyle Burton</h3>
                                     <p>Founder & CEO, Huddle</p>
                                 </div>
@@ -107,7 +107,7 @@
                     </div>
                 </div>
                 <div class="col-6 col-sm-12 col-xs-12">
-                    <div class="features_secondary flex align-items-center justify-content-end">
+                    <div class="features_secondary flex-center-center">
                         <img src="./assets/images/illustration-secondary.svg"
                             alt="Your browser don't support this image">
                     </div>
@@ -120,7 +120,7 @@
     <section class="team flex-center-center" id="team">
         <div class="container">
             <div class="team_wrapper">
-                <div class="col-6 col-xs-12">
+                <div class="col-6 col-sm-12 col-xs-12">
                     <div class="team_primary">
                         <h2>Get early access today</h2>
                         <p>It only takes a minute to sign up and our free starter tier is extremely generous. If you
@@ -128,10 +128,10 @@
                             any questions, our support team would be happy to help you.</p>
                     </div>
                 </div>
-                <div class="col-4 col-xs-12">
-                    <div class="team_secondary pr-1">
+                <div class="col-4 col-sm-12 col-xs-12">
+                    <div class="team_secondary">
                         <input type="email" placeholder="email@example.com">
-                        <button class="mt-3">Get Started For Free</button>
+                        <button>Get Started For Free</button>
                     </div>
                 </div>
             </div>
@@ -143,7 +143,7 @@
         <div class="container">
             <div class="col-12">
                 <div class="footer_logo">
-                    <img src="./assets/images/logoWhite.svg" alt="Your browser don't support this image">
+                    <img src="./assets/images/logo-light.svg" alt="Your browser don't support this image">
                 </div>
                 <ul class="footer_content">
                     <li>
