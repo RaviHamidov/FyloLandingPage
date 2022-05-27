@@ -12,8 +12,16 @@
     @include justify-space-between;
 }
 
+.text-align-start {
+    @include text-align-start;
+}
+
 .text-align-center {
     @include text-align-center;
+}
+
+.text-align-end {
+    @include text-align-end;
 }
 
 .flex {
