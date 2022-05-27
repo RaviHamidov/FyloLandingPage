@@ -9,8 +9,16 @@
     display: inline-block;
 }
 
+@mixin text-align-start {
+    text-align: start;
+}
+
 @mixin text-align-center {
     text-align: center;
+}
+
+@mixin text-align-end {
+    text-align: end;
 }
 
 @mixin flex {
