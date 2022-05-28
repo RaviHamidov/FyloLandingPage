@@ -52,8 +52,9 @@ Users should be able to:
 - I use pure HTML & CSS only and write everything from scratch, 
   Don't used utilize any no code tools like Wix, Wordpress etc.
 
-- And i used CSS preprocessors `SASS`, By the way i provide a readme file with
-  instructions for you how to run it.
+- And i used CSS preprocessors `SASS`, By the way i provide a readme file with instructions for you how to run it.
+  - I used some extensions to compile the codes in main.scss into main.css, I mean All scss files are imported into main.scss file, so you can see all css codes in main.css.
+
 
 - My SASS Folder Structure (for this Project)
   - css
