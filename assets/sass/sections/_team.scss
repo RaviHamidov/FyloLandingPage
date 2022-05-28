@@ -62,35 +62,30 @@
 =======================================*/
 @media only screen and (max-width: 992px) {
     .team {
-        padding: 3rem;
-        background: $color_primary-light;
-
         &_wrapper {
-            @include flex;
             @include flex-direction-column;
+
+            @media only screen and (max-width: 992px) {
+                .team {
+                    &_wrapper {
+                        @include flex-direction-column;
+                        align-items: center;
+                        justify-content: center;
+                        text-align: center;
+                    }
+
+                    &_secondary {
+                        @include flex;
+                        @include justify-content-center;
+                        @include align-items-center;
+                        @include flex-direction-column;
+                    }
+                }
+            }
+
             align-items: center;
             justify-content: center;
             text-align: center;
-        }
-
-        &_primary {
-            h2 {
-                font-family: $font_family-Raleway;
-                font-size: $font_size-primary;
-                font-style: $font_style-normal;
-                font-weight: $font_weight-primary;
-                line-height: $font_line-height-primary;
-                color: $color_text;
-            }
-
-            p {
-                font-family: $font_family-Raleway;
-                font-size: $font_size-fourth;
-                font-style: $font_style-normal;
-                font-weight: $font_weight-secondary;
-                line-height: $font_line-height-secondary;
-                color: $color_text;
-            }
         }
 
         &_secondary {
@@ -98,61 +93,6 @@
             @include justify-content-center;
             @include align-items-center;
             @include flex-direction-column;
-
-            input {
-                max-width: 480px;
-                max-height: 48px;
-                width: 100%;
-                height: 100%;
-                padding: 1rem;
-            }
-
-            button {
-                font-family: $font_family-Raleway;
-                font-style: $font_style-normal;
-                font-weight: $font_weight-primary;
-                font-size: $font_size-fourth;
-                line-height: $font_line-height-fourth;
-                background: #2F65F8;
-                color: $color_link-default;
-                box-shadow: 2px 3px 6px rgba(7, 4, 59, 0.157043);
-                border-radius: 3.125px;
-                padding: 1rem;
-            }
-        }
-    }
-}
-
-@media only screen and (max-width: 375px) {
-    .header {
-        &_navbar {
-            padding: 2.4rem;
-
-            &-logo {
-                img {
-                    width: 80px;
-                    height: 24px;
-                }
-            }
-
-            &-nav {
-
-                ul {
-                    li {
-                        margin: 0 0 0 0.4rem;
-
-                        a {
-                            font-family: $font_family-Raleway;
-                            font-size: $font_size-third;
-                            font-style: $font_style-normal;
-                            font-weight: $font_weight-secondary;
-                            line-height: $font_line-height-third;
-                            color: $color_primary-default;
-                            text-decoration: none;
-                        }
-                    }
-                }
-            }
         }
     }
 }

@@ -135,34 +135,6 @@
         padding: 3rem 0 0 0;
 
         &_wrapper {
-            @include flex;
-            flex-direction: column-reverse;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-
-        &_primary {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            &-content {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-
-            }
-        }
-    }
-}
-
-@media only screen and (max-width: 375px) {
-    .features {
-        padding: 3rem 0 0 0;
-
-        &_wrapper {
-            @include flex;
             flex-direction: column-reverse;
             align-items: center;
             justify-content: center;
@@ -183,6 +155,18 @@
 
             &-card {
                 margin: 5rem 0 13rem;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .features {
+        // padding: 3rem 0 0 0;
+
+        &_primary {
+            &-card {
+                margin: 5rem 0 30rem;
             }
         }
 
