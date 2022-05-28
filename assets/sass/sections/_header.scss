@@ -1,9 +1,45 @@
 /*=======================================
+            Credits - Start
+=======================================*/
+.header {
+    &_top {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 5vh;
+        width: 100vw;
+        background: $color_primary-default;
+
+        p {
+            font-family: $font_family-Raleway;
+            font-size: $font_size-secondary;
+            font-style: $font_style-normal;
+            font-weight: $font_weight-secondary;
+            line-height: $font_line-height-secondary;
+            color: $color_text;
+
+            a {
+                font-family: $font_family-Raleway;
+                font-size: $font_size-secondary;
+                font-style: $font_style-normal;
+                font-weight: $font_weight-secondary;
+                line-height: $font_line-height-secondary;
+                color: $color_external-default;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+/*=======================================
+            Credits - Start
+=======================================*/
+
+/*=======================================
             NavBar - Start
 =======================================*/
 .header {
     height: 100vh;
-    padding: 1rem;
 
     &_navbar {
         padding: 3.5rem 8rem;
