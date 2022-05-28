@@ -1,0 +1,199 @@
+/*=======================================
+            Features - Start
+=======================================*/
+.features {
+    position: relative;
+    height: 100vh;
+    background: $color_bg;
+    padding: 1rem;
+
+    &_bg {
+        position: absolute;
+        left: 0%;
+        top: -10%;
+        width: 100%;
+        height: 10%;
+        z-index: -1;
+    }
+
+    &_wrapper {
+        @include flex;
+        @include justify-space-between;
+    }
+
+    &_primary {
+        &-content {
+            h2 {
+                font-family: $font_family-Raleway;
+                font-size: $font_size-primary;
+                font-style: $font_style-normal;
+                font-weight: $font_weight-primary;
+                line-height: $font_line-height-primary;
+                color: $color_primary-default;
+            }
+
+            p {
+                font-family: $font_family-Raleway;
+                font-size: $font_size-secondary;
+                font-style: $font_style-normal;
+                font-weight: $font_weight-secondary;
+                line-height: $font_line-height-secondary;
+                color: $color_primary-default;
+            }
+
+            a {
+                font-family: $font_family-Raleway;
+                font-size: $font_size-secondary;
+                font-style: $font_style-normal;
+                font-weight: $font_weight-secondary;
+                line-height: $font_line-height-secondary;
+                color: $color_external-default;
+                text-decoration: none;
+                position: relative;
+
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 22px;
+                    left: 0;
+                    height: 1px;
+                    width: 180px;
+                    background: $color_external-active;
+                }
+            }
+        }
+
+        &-card {
+            background: #FFFFFF;
+            box-shadow: 0px 0px 10px 5px rgba(56, 56, 56, 0.0458843);
+            border-radius: 5px;
+            padding: 1.2rem 3.3rem 2.6rem;
+            margin: 5rem 0 5rem;
+
+            i {
+                font-size: $font_size-quote;
+                line-height: $font_line-height-primary;
+                color: $color_primary-default;
+            }
+
+            p {
+                font-family: $font_family-Raleway;
+                font-size: $font_size-card-content;
+                font-style: $font_style-normal;
+                font-weight: $font_weight-secondary;
+                line-height: $font_line-height-secondary;
+                color: $color_primary-default;
+            }
+
+            &-author {
+                img {
+                    width: 32px;
+                    height: 32px;
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                }
+
+                &-info {
+                    h3 {
+                        font-family: $font_family-Raleway;
+                        font-size: $font_size-card-title;
+                        font-style: $font_style-normal;
+                        font-weight: $font_weight-primary;
+                        color: $color_primary-default;
+                    }
+
+                    p {
+                        font-family: $font_family-Raleway;
+                        font-size: $font_size-card-explanation;
+                        font-style: $font_style-normal;
+                        font-weight: $font_weight-secondary;
+                        color: $color_primary-default;
+                    }
+                }
+            }
+        }
+    }
+
+    &_secondary {
+        img {
+            max-width: 542px;
+            max-height: 409;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+/*=======================================
+            Responsive Design Start
+=======================================*/
+@media only screen and (max-width: 992px) {
+    .features {
+        padding: 3rem 0 0 0;
+
+        &_wrapper {
+            @include flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        &_primary {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .features {
+        padding: 3rem 0 0 0;
+
+        &_wrapper {
+            @include flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        &_primary {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &-content {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+            }
+
+            &-card {
+                margin: 5rem 0 13rem;
+            }
+        }
+
+        &_secondary {
+            img {
+                margin-top: 16rem;
+            }
+        }
+    }
+}
+
+/*=======================================
+            Features - End
+=======================================*/

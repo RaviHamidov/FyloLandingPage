@@ -1,0 +1,53 @@
+/*=======================================
+            Footer - Start
+=======================================*/
+.footer {
+    padding: 3rem;
+    background: $color_primary-default;
+
+    &_content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+
+        li {
+            margin: 2rem 0 0 0;
+            display: flex;
+            flex-direction: column;
+
+            a {
+                font-family: $font_family-Raleway;
+                font-size: $font_size-fourth;
+                font-style: $font_style-normal;
+                font-weight: $font_weight-secondary;
+                line-height: $font_line-height-third;
+                color: $color_text;
+                margin-bottom: 1.5rem;
+                text-decoration: none;
+
+                i {
+                    margin: 0 1rem 0 0;
+                }
+            }
+
+            &:last-child {
+                display: inline;
+
+                i {
+                    font-size: $font_size-fourth;
+                    padding: 1rem;
+                    color: $color_text;
+                    border-radius: 50%;
+                    border: 1px solid $color_text;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                }
+            }
+        }
+    }
+}
+
+/*=======================================
+            Footer - End
+=======================================*/

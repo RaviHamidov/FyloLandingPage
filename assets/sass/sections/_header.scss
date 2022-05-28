@@ -1,0 +1,377 @@
+/*=======================================
+            NavBar - Start
+=======================================*/
+.header {
+    height: 100vh;
+    padding: 1rem;
+
+    &_navbar {
+        padding: 3.5rem 8rem;
+
+        &-logo {
+            img {
+                width: 166px;
+                height: 49px;
+            }
+        }
+
+        &-nav {
+            ul {
+                li {
+                    margin: 0 0 0 5.7rem;
+
+                    a {
+                        font-family: $font_family-Raleway;
+                        font-size: $font_size-secondary;
+                        font-style: $font_style-normal;
+                        font-weight: $font_weight-secondary;
+                        line-height: $font_line-height-secondary;
+                        color: $color_primary-default;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*=======================================
+            Responsive Design Start
+=======================================*/
+@media only screen and (max-width: 992px) {
+    .header {
+        &_navbar {
+            padding: 2.4rem;
+
+            &-logo {
+                img {
+                    width: 80px;
+                    height: 24px;
+                }
+            }
+
+            &-nav {
+                ul {
+                    li {
+                        margin: 0 0 0 0.6rem;
+
+                        a {
+                            font-family: $font_family-Raleway;
+                            font-size: $font_size-fourth;
+                            font-style: $font_style-normal;
+                            font-weight: $font_weight-secondary;
+                            line-height: $font_line-height-fourth;
+                            color: $color_primary-default;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .header {
+        &_navbar {
+            padding: 2.4rem;
+
+            &-logo {
+                img {
+                    width: 80px;
+                    height: 24px;
+                }
+            }
+
+            &-nav {
+
+                ul {
+                    li {
+                        margin: 0 0 0 0.4rem;
+
+                        a {
+                            font-family: $font_family-Raleway;
+                            font-size: $font_size-third;
+                            font-style: $font_style-normal;
+                            font-weight: $font_weight-secondary;
+                            line-height: $font_line-height-third;
+                            color: $color_primary-default;
+                            text-decoration: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*=======================================
+            NavBar - End
+=======================================*/
+
+/*=======================================
+                Home - Start
+=======================================*/
+.header {
+    &_home {
+        padding: 1rem;
+        margin-top: 12rem;
+
+        &_wrapper {
+            @include flex;
+            @include justify-space-between;
+        }
+
+        &-primary {
+            h1 {
+                font-family: $font_family-Raleway;
+                font-size: $font_size-primary;
+                font-style: $font_style-normal;
+                font-weight: $font_weight-primary;
+                line-height: $font_line-height-primary;
+                color: $color_primary-default;
+            }
+
+            p {
+                font-family: $font_family-Raleway;
+                font-size: $font_size-secondary;
+                font-style: $font_style-normal;
+                font-weight: $font_weight-secondary;
+                line-height: $font_line-height-secondary;
+                color: $color_primary-default;
+            }
+
+            &-contact {
+                button {
+                    font-family: $font_family-Raleway;
+                    font-style: $font_style-normal;
+                    font-weight: $font_weight-primary;
+                    font-size: $font_size-fourth;
+                    line-height: $font_line-height-fourth;
+                    background: #2F65F8;
+                    color: $color_link-default;
+                    box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
+                    border-radius: 3.125px;
+                    -webkit-border-radius: 3.125px;
+                    -moz-border-radius: 3.125px;
+                    -ms-border-radius: 3.125px;
+                    -o-border-radius: 3.125px;
+                }
+            }
+        }
+
+        &-secondary {
+            img {
+                max-width: 640px;
+                max-height: 474;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+
+/*=======================================
+            Responsive Design Start
+=======================================*/
+@media only screen and (max-width: 992px) {
+    .header {
+        &_home {
+            padding: 1rem;
+            margin-top: 0;
+
+            &_wrapper {
+                @include flex;
+                flex-direction: column-reverse;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+
+            &-primary {
+                h1 {
+                    font-family: $font_family-Raleway;
+                    font-size: $font_size-primary-lg;
+                    font-style: $font_style-normal;
+                    font-weight: $font_weight-primary;
+                    line-height: $font_line-height-primary-lg;
+                    color: $color_primary-default;
+                }
+
+                p {
+                    font-family: $font_family-Raleway;
+                    font-size: $font_size-secondary;
+                    font-style: $font_style-normal;
+                    font-weight: $font_weight-secondary;
+                    line-height: $font_line-height-secondary;
+                    color: $color_primary-default;
+                }
+
+                &-contact {
+                    button {
+                        font-family: $font_family-Raleway;
+                        font-style: $font_style-normal;
+                        font-weight: $font_weight-primary;
+                        font-size: $font_size-fourth;
+                        line-height: $font_line-height-fourth;
+                        background: #2F65F8;
+                        color: $color_link-default;
+                        box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
+                        border-radius: 3.125px;
+                        -webkit-border-radius: 3.125px;
+                        -moz-border-radius: 3.125px;
+                        -ms-border-radius: 3.125px;
+                        -o-border-radius: 3.125px;
+                    }
+                }
+            }
+
+            &-secondary {
+                img {
+                    max-width: 640px;
+                    max-height: 474;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .header {
+        &_home {
+            padding: 1rem;
+            margin-top: 0;
+
+            &_wrapper {
+                @include flex;
+                flex-direction: column-reverse;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                margin-top: 2rem;
+            }
+
+            &-primary {
+                h1 {
+                    font-family: $font_family-Raleway;
+                    font-size: $font_size-primary-lg;
+                    font-style: $font_style-normal;
+                    font-weight: $font_weight-primary;
+                    line-height: $font_line-height-primary-lg;
+                    color: $color_primary-default;
+                }
+
+                p {
+                    font-family: $font_family-Raleway;
+                    font-size: $font_size-secondary;
+                    font-style: $font_style-normal;
+                    font-weight: $font_weight-secondary;
+                    line-height: $font_line-height-secondary;
+                    color: $color_primary-default;
+                }
+
+                &-contact {
+                    flex-direction: column;
+
+                    button {
+                        font-family: $font_family-Raleway;
+                        font-style: $font_style-normal;
+                        font-weight: $font_weight-primary;
+                        font-size: $font_size-fourth;
+                        line-height: $font_line-height-fourth;
+                        background: #2F65F8;
+                        color: $color_link-default;
+                        box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
+                        border-radius: 3.125px;
+                        -webkit-border-radius: 3.125px;
+                        -moz-border-radius: 3.125px;
+                        -ms-border-radius: 3.125px;
+                        -o-border-radius: 3.125px;
+                        margin-top: 1rem;
+                    }
+                }
+            }
+
+            &-secondary {
+                img {
+                    max-width: 640px;
+                    max-height: 474;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .header {
+        &_home {
+            padding: 1rem;
+            margin-top: 0;
+
+            &_wrapper {
+                @include flex;
+                flex-direction: column-reverse;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+
+            &-primary {
+                h1 {
+                    font-family: $font_family-Raleway;
+                    font-size: $font_size-primary-xs;
+                    font-style: $font_style-normal;
+                    font-weight: $font_weight-primary;
+                    line-height: $font_line-height-primary-xs;
+                    color: $color_primary-default;
+                }
+
+                p {
+                    font-family: $font_family-Raleway;
+                    font-size: $font_size-secondary;
+                    font-style: $font_style-normal;
+                    font-weight: $font_weight-secondary;
+                    line-height: $font_line-height-secondary;
+                    color: $color_primary-default;
+                }
+
+                &-contact {
+                    flex-direction: column;
+
+                    button {
+                        font-family: $font_family-Raleway;
+                        font-style: $font_style-normal;
+                        font-weight: $font_weight-primary;
+                        font-size: $font_size-fourth;
+                        line-height: $font_line-height-fourth;
+                        background: #2F65F8;
+                        color: $color_link-default;
+                        box-shadow: 2px 3px 6px rgba(0, 0, 0, 0.15925);
+                        border-radius: 3.125px;
+                        -webkit-border-radius: 3.125px;
+                        -moz-border-radius: 3.125px;
+                        -ms-border-radius: 3.125px;
+                        -o-border-radius: 3.125px;
+                    }
+                }
+            }
+
+            &-secondary {
+                img {
+                    max-width: 640px;
+                    max-height: 474;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+    }
+}
+
+/*=======================================
+                Home - End
+=======================================*/
