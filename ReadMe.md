@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL:](https://github.com/RaviHamidov/Project_FyloLandingPage)
+- [Solution URL](https://github.com/RaviHamidov/Project_FyloLandingPage)
 - [Live Site URL](https://ravihamidov.github.io/Project_FyloLandingPage/)
 
 ## My process
@@ -47,7 +47,7 @@ Users should be able to:
 
 - All Project's code Organized I mean that Beautify, Readable, Understandable. 
 
-- In this writen with BEM Methodology.
+- In this Project writen with BEM Methodology.
 
 - I use pure HTML & CSS only and write everything from scratch, 
   Don't used utilize any no code tools like Wix, Wordpress etc.
