@@ -28,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://github.com/RaviHamidov/Project_FyloLandingPage)
-- [Live Site URL](https://ravihamidov.github.io/Project_FyloLandingPage/)
+- [Solution URL](https://github.com/RaviHamidov/FyloLandingPage)
+- [Live Site URL](https://ravihamidov.github.io/FyloLandingPage/)
 
 ## My process
 
