@@ -2128,10 +2128,6 @@ body {
   background: #71DFCC;
 }
 
-.features_primary-content a img {
-  padding-left: 0.5vw;
-}
-
 .features_primary-card {
   background: #FFFFFF;
   box-shadow: 0px 0px 10px 5px rgba(56, 56, 56, 0.0458843);
