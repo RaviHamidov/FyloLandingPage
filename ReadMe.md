@@ -58,7 +58,7 @@ Users should be able to:
 
 - My SASS Folder Structure (for this Project)
   - css
-    - main.scss
+    - main.css
   - sass 
     - base
       - _reset.scss
